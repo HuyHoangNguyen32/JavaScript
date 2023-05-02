@@ -2,7 +2,7 @@
 // Math.random() => [0, 1)
 
 function randomNumber(n) {
-  if (n <= 0) return;
+  if (n <= 0) return -1;
 
   const random = Math.random() * n;
   const result = Math.round(random);
