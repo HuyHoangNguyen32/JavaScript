@@ -1,4 +1,4 @@
-function checkIndexOf(numberList, key) {
+function checkLastIndexOf(numberList, key) {
   if (!Array.isArray(numberList)) return false;
 
   let index = -1;
@@ -10,6 +10,6 @@ function checkIndexOf(numberList, key) {
   return index;
 }
 
-console.log(checkIndexOf([1, 6, 3], 1));
-console.log(checkIndexOf([2, 0, 4, 6, 0], 0));
-console.log(checkIndexOf([1, 3, 5, 9, 21, 5], 5));
+console.log(checkLastIndexOf([1, 6, 3], 1));
+console.log(checkLastIndexOf([2, 0, 4, 6, 0], 0));
+console.log(checkLastIndexOf([1, 3, 5, 9, 21, 5], 5));
