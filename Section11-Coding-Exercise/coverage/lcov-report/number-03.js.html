@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for 01-calc-sum.js</title>
+    <title>Code coverage report for number-03.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="prettify.css" />
     <link rel="stylesheet" href="base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> 01-calc-sum.js</h1>
+        <h1><a href="index.html">All files</a> number-03.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">91.3% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>14/14</span>
+                <span class='fraction'>21/23</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">87.5% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>4/4</span>
+                <span class='fraction'>14/16</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>11/11</span>
+                <span class='fraction'>17/17</span>
             </div>
         
             
@@ -90,60 +90,63 @@
 <a name='L25'></a><a href='#L25'>25</a>
 <a name='L26'></a><a href='#L26'>26</a>
 <a name='L27'></a><a href='#L27'>27</a>
-<a name='L28'></a><a href='#L28'>28</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">35x</span>
+<span class="cline-any cline-yes">23x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-yes">40x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-yes">31x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// Bài 1: Tính S(n) = 1 + 2 + 3 + … + n
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&nbsp;
+export function isIncreasingNumberByDistance(n, x) {
+  if (n &lt;= 9 || n &gt;= 1000000) return false;
+  if (x &lt;= 0 || x &gt;= 5) return false;
 &nbsp;
-// C1 : for i
-export function calculateSum(n) {
-  if (n &lt;= 0) return 0;
+  const numberString = n.toString();
+  let flag1 = true;
+  let flag2 = true;
 &nbsp;
-  let sum = 0;
-&nbsp;
-  for (let i = 1; i &lt;= n; i++) {
-    sum += i;
+  for (let i = 1; i &lt; numberString.length; i++) {
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (numberString[i] &lt; numberString[i - 1]) <span class="cstat-no" title="statement not covered" >return (flag1 = false);</span>
   }
 &nbsp;
-  return sum;
+  for (let j = 1; j &lt; numberString.length; j++) {
+    if (Number.parseInt(numberString[j]) - Number.parseInt(numberString[j - 1]) !== x)
+      return (flag2 = false);
+  }
+&nbsp;
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (flag1 === false || flag2 === false) <span class="cstat-no" title="statement not covered" >return false;</span>
+&nbsp;
+  return true;
 }
 &nbsp;
-console.log(calculateSum(1));
-&nbsp;
-// C2 : S(n) = n * (n+1) / 2
-export function calculateSum2(n) {
-  if (n &lt;= 0) return 0;
-&nbsp;
-  return (n * (n + 1)) / 2;
-}
-&nbsp;
-console.log(calculateSum2(1));
-console.log(calculateSum2(2));
-console.log(calculateSum2(3));
+console.log(isIncreasingNumberByDistance(125, 1));
+console.log(isIncreasingNumberByDistance(11, 1));
+console.log(isIncreasingNumberByDistance(123, 1));
+console.log(isIncreasingNumberByDistance(135, 2));
+console.log(isIncreasingNumberByDistance(135, 1));
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
