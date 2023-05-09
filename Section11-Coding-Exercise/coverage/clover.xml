@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1683599007530" clover="3.2.0">
-  <project timestamp="1683599007530" name="All files">
-    <metrics statements="118" coveredstatements="118" conditionals="72" coveredconditionals="70" methods="10" coveredmethods="10" elements="200" coveredelements="198" complexity="0" loc="118" ncloc="118" packages="1" files="9" classes="9"/>
+<coverage generated="1683600199973" clover="3.2.0">
+  <project timestamp="1683600199974" name="All files">
+    <metrics statements="130" coveredstatements="130" conditionals="82" coveredconditionals="80" methods="11" coveredmethods="11" elements="223" coveredelements="221" complexity="0" loc="130" ncloc="130" packages="1" files="10" classes="10"/>
     <file name="01-calc-sum.js" path="/Users/hoangnguyen/Desktop/JavaScript/Code/Section11-Coding-Exercise/practice/01-calc-sum.js">
       <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
       <line num="5" count="7" type="cond" truecount="2" falsecount="0"/>
@@ -146,6 +146,21 @@
       <line num="19" count="1" type="stmt"/>
       <line num="20" count="1" type="stmt"/>
       <line num="21" count="1" type="stmt"/>
+    </file>
+    <file name="number-09.js" path="/Users/hoangnguyen/Desktop/JavaScript/Code/Section11-Coding-Exercise/practice/number-09.js">
+      <metrics statements="12" coveredstatements="12" conditionals="10" coveredconditionals="10" methods="1" coveredmethods="1"/>
+      <line num="2" count="20" type="cond" truecount="4" falsecount="0"/>
+      <line num="3" count="15" type="cond" truecount="4" falsecount="0"/>
+      <line num="5" count="10" type="stmt"/>
+      <line num="6" count="10" type="stmt"/>
+      <line num="8" count="10" type="stmt"/>
+      <line num="9" count="31" type="stmt"/>
+      <line num="10" count="31" type="stmt"/>
+      <line num="13" count="10" type="cond" truecount="2" falsecount="0"/>
+      <line num="15" count="3" type="stmt"/>
+      <line num="18" count="1" type="stmt"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
