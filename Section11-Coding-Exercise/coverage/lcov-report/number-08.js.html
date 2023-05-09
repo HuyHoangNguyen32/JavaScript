@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for number-07.js</title>
+    <title>Code coverage report for number-08.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="prettify.css" />
     <link rel="stylesheet" href="base.css" />
@@ -19,7 +19,7 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> number-07.js</h1>
+        <h1><a href="index.html">All files</a> number-08.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
@@ -84,46 +84,46 @@
 <a name='L19'></a><a href='#L19'>19</a>
 <a name='L20'></a><a href='#L20'>20</a>
 <a name='L21'></a><a href='#L21'>21</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">16x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">11x</span>
-<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">14x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">11x</span>
-<span class="cline-any cline-yes">42x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">41x</span>
+<span class="cline-any cline-yes">41x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">11x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export function isSymetricNumber(n) {
-  if (n &lt;= 1 || n &gt;= 1000000) return false;
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">&nbsp;
+export function isDivisibleBy10(n) {
+  if (n &lt;= 0 || n &gt;= 1000000) return false;
 &nbsp;
-  const arrayNumber = [];
   const stringNumber = n.toString();
+  let sum  = 0;
 &nbsp;
   for (let i = 0; i &lt; stringNumber.length; i++) {
-    arrayNumber.push(stringNumber[i]);
+    let value = Number.parseInt(stringNumber[i]);
+    sum += value;
   }
-&nbsp;
-  const reverseNumber = +arrayNumber.reverse().join('');
-&nbsp;
-  if (reverseNumber === n) return true;
+  
+  if (sum % 10 === 0) return true;
 &nbsp;
   return false;
+&nbsp;
 }
 &nbsp;
-console.log(isSymetricNumber(10));
-console.log(isSymetricNumber(11));
-console.log(isSymetricNumber(12321));
-&nbsp;</pre></td></tr></table></pre>
+console.log(isDivisibleBy10(10))
+console.log(isDivisibleBy10(1234))
+console.log(isDivisibleBy10(123455))</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
